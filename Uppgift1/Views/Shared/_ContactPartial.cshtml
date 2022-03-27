@@ -1,0 +1,97 @@
+﻿<div class="bg-blue-gradient">
+       <div class="container">
+         <div class="header-grid">
+                    <div id="branding">
+                        <h1>OmniVus.</h1>
+                        <p>IT Service & Technology</p>
+                    </div>
+                    <nav id="top-menu">
+                        <a href="mailto:info@domain.com">info@domain.com</a>
+                        <div class="social">
+                            <a href="https://facebook.com">facebook</a>
+                            <a href="https://twitter.com">twitter</a>
+                            <a href="https://linkedin.com">linkedin</a>
+                            <a href="https://youtube.com">youtube</a>
+                        </div>
+                    </nav>
+              <nav id="main-menu">
+                      <div class="menu-items">
+                         <a asp-controller="Home"asp-action="Index">Home</a>
+                        <a asp-controller="Services"asp-action="Index">Services</a>
+                        <a asp-controller="Contact"asp-action="Index">Contact</a>
+                        </div>
+                        <a href="#" class="btn btn-main">Book a Meeting</a>
+              </nav>
+       </div>
+  </div>
+  <section id="page-title">
+    <div class="content">
+        <h1>@ViewData["Title"]</h1>
+  
+        <div >
+            <a asp-controller="Home" asp-action="Index">Home</a> | <a asp-controller="Contact" asp-action="Index">Contact</a>
+           
+        </div>
+
+    </div>
+ </section>
+
+ <!-- Första section -->
+<form class="was-validated"id="midel-c" >
+        <div class="tex-d">
+            <div class="get-t">
+                <p>Get In Touch----</p>
+                <h1>Estimate for your </br>
+                    projects.</h1>
+            </div>
+           <div class="forminput mb-3">     
+              <input class="form-control is-invalid"  placeholder="Enter your name"value="" required> 
+           </div>
+           <div class="forminput mb-5">
+            <input type="email"  class="form-control is-invalid" placeholder="Enter your email"value="" required>
+           </div>    
+               <textarea  class="form-control  is-invalid" style="padding: 10%; margin-bottom: 2rem;" placeholder="Enter your massage"value="" required></textarea>
+               <button class="btn-submit" type="submit">Submit Now</button>
+         </div>
+           <div class="im-d">
+               <img src="Images/Group 2.png" width="529" height="558" alt="">
+           </div>
+     </FORM>
+    <!-- andra section -->
+ <section id="Fyardeshowcase">
+     <div class="column">
+         <div class="content">
+             <div class="OmniVus">
+                 <h1>OmniVus</h1>
+                     <p >The web has changed a lot since we posted our <br/> 
+                         first article back in 2007. The team at Mattin-<br/>
+                         Lassi Group has changed too, as have the <br/>
+                         things that we bring to our community<br/> 
+                         conferences, books, and our membership <br/>
+                         added to the online magazine. 
+                         <p>
+                         One thing that hasn’t changed is that we’re a<br/>
+                          small team — with most of us not working
+                         </p>
+             </div>
+                 <div class="p-c">
+                     <img src="Images/bg.png" width="750" height="750">
+                     
+                 </div>            
+         </div>
+     </div>
+     <div class="column">
+         <div class="working">
+             <h1>Working Hours</h1>
+                 <p>Monday - Friday: 7:00 - 17:00<br/>
+                     Saturday: 7:00 - 12:00<br/>
+                     Sunday and holidays: 8:00 - 10:00<br/>
+                 </p>
+                 <p>For more then 15 years, IT Service has been a <br/> 
+                     reliable partner in the field of logistics and <br/>
+                     cargo forwarding.</p>
+         </div> 
+         <img class="showcase-images" src="images/Group 19.png">
+     </div>
+     
+ </section>

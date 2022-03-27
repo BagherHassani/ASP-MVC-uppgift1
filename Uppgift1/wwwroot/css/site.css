@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@100;400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+    font-family: "Karla", sans-serif;
+    color: #002249;
+}
+
+a {
+    color: #6c90b9;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #002249;
+    }
+
+.btn {
+    border-radius: 0;
+    padding: 1rem 2.55rem;
+}
+
+.btn-main {
+    color: #ffffff;
+    background-color: #006de8;
+    border-color: #006de8;
+}
+
+    .btn-main:hover {
+        color: #ffffff;
+        background-color: #0052af;
+    }
+
+.container {
+    padding: 0;
+}
+
+.bg-blue-gradient {
+    background: white;
+    background: radial-gradient(circle, white 5%, #a9c7ec 100%);
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "branding" "mainmenu";
+}
+
+#branding {
+    grid-area: branding;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 25px;
+}
+
+    #branding h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    #branding p {
+        font-family: "Karla", sans-serif;
+        font-size: 15px;
+        color: #6c90b9;
+        line-height: 0.5;
+    }
+
+#top-menu {
+    display: none;
+    grid-area: topmenu;
+    border-bottom: 1px solid #a9c7ec;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    margin-left: 100px;
+}
+
+    #top-menu .social a {
+        margin-left: 1rem;
+    }
+
+#main-menu {
+    grid-area: mainmenu;
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+    #main-menu .menu-items {
+        margin-right: 2rem;
+    }
+
+        #main-menu .menu-items a {
+            margin-left: 4rem;
+        }
+
+.border {
+    border-color: black !important;
+}
+
+@media (min-width: 992px) {
+    .header-grid {
+        display: grid;
+        grid-template-columns: 274px auto;
+        grid-template-areas: "branding topmenu" "branding mainmenu";
+    }
+
+    #top-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#showcase {
+    display: flex;
+}
+
+    #showcase .column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #showcase .column .content p {
+            font-size: 24px;
+            color: #69a1bb;
+        }
+
+        #showcase .column .content h1 {
+            font-size: 80px;
+            color: #002249;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #showcase .column .content .items {
+            display: flex;
+        }
+
+            #showcase .column .content .items .item {
+                display: flex;
+                align-items: center;
+            }
+
+                #showcase .column .content .items .item:first-child {
+                    margin-right: 6rem;
+                    margin-left: -1.5rem;
+                }
+
+                #showcase .column .content .items .item span {
+                    margin-top: -1rem;
+                    font-size: 24px;
+                }
+
+        #showcase .column .showcase-image {
+            margin-right: -5rem;
+        }
+
+#page-title {
+    display: flex;
+    justify-content: center;
+}
+
+    #page-title .content {
+        margin: 135px 0;
+        text-align: center;
+    }
+
+        #page-title .content h1 {
+            font-size: 80px;
+            color: #002249;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #page-title .content .breadcrumb {
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            color: #69a1bb;
+        }
+
+            #page-title .content .breadcrumb a {
+                margin: 0 1rem;
+            }
+
+#AboutUs {
+    display: flex;
+}
+
+    #AboutUs.column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.b-image {
+    margin-left: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.b-cloumn {
+    margin-left: 4rem;
+}
+
+.but {
+    font-family: Karla-Bold;
+    color: #006DE8;
+    margin-top: 9rem;
+}
+
+.you {
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    margin-top: 3rem;
+}
+
+.does {
+    font-family: Karla-Regular;
+    color: #69A1BB;
+    font-weight: 60px;
+    margin-top: 2rem;
+}
+
+.years {
+    text-align: center;
+    color: #002249;
+    font-family: Gilroy-Bold;
+}
+
+.number {
+    font-family: Gilroy-Bold;
+    color: #006DE8;
+    font-size: 100px;
+    font-weight: 100;
+    margin-top: 2rem;
+}
+
+.year {
+    margin-left: 3rem;
+    text-align: center;
+    margin-top: 2.2rem;
+    font-family: Gilroy-Bold;
+    font-size: 30px;
+    margin-top: 4rem;
+}
+
+.btn-lern {
+    color: #ffffff;
+    background-color: #006de8;
+    border-color: #006de8;
+    padding: 5px 10px;
+    font-family: Karla-Bold;
+    font-size: small;
+}
+
+.btn-video {
+    background-color: #B7C3D6;
+    padding: 5px 10px;
+    font-size: small;
+}
+
+#HOW {
+    display: flex;
+    background-color: #00152D;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.Howwe {
+    font-family: Gilroy-Bold;
+    font-weight: 60px;
+    margin-top: 5rem;
+}
+
+.The {
+    font-family: Karla-Regular;
+    font-size: 24;
+    color: #A1BBD7;
+}
+
+.hether {
+    font-family: Karla-Regular;
+    font-size: 16px;
+    color: #C5D5E7;
+}
+
+.b-cl {
+    margin-left: 20rem;
+}
+
+.b-images {
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+
+.btn-lernmore {
+    color: #ffffff;
+    background-color: #006de8;
+    border-color: #006de8;
+    padding: 5px 20px;
+    font-family: Karla-Bold;
+    font-size: small;
+    margin-top: 2rem;
+}
+
+#form {
+    color: white;
+}
+
+
+
+.book h1 {
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-left: 20rem;
+}
+
+.book p {
+    font-family: Karla-Regular;
+    font-size: 16px;
+    margin-left: 20rem;
+}
+
+.b-form {
+    background-color: #001222;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 8rem;
+    height: 600px;
+}
+
+.form-control {
+    background-color: #001222;
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.label {
+    color: white;
+}
+
+.b-tn {
+    background-color: #006DE8;
+    color: white;
+    padding: 13px;
+    margin-left: 46rem;
+    margin-top: 4rem;
+}
+
+#Fyardeshowcase {
+    display: flex;
+    margin-top: 5rem;
+    background-color: #001222;
+    color: white;
+    justify-content: center;
+}
+
+.p-c {
+    position: absolute;
+    margin-left: -38rem;
+    margin-top: -4rem;
+}
+
+.showcase-images {
+    margin-left: 50rem;
+    margin-bottom: 5rem;
+}
+
+.working {
+    position: relative;
+    margin-left: 28rem;
+    margin-top: 6rem;
+  }
+    .working p {
+    font-family: Karla-Regular;
+    font-size: 20px;
+}
+
+.OmniVus {
+    font-family: Karla-Regular;
+    font-size: 16px;
+    margin-top: 6rem;
+}
+
+
+#grid {
+    background-color: #f0f1f3;
+}
+
+.card-titlee {
+    background-color: #002249;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    margin-left: -1.1rem;
+    margin-right: -1.1rem;
+    
+    margin-top: -5rem;
+    margin-bottom: -4rem;
+}
+
+.ruta {
+    position: absolute;
+    margin-top: 8rem;
+    margin-left: 1rem;
+}
+
+.card {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contente {
+    height: 50%;
+    width: 50%;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 30rem;
+}
+
+.texter {
+    background-color: #4484e4;
+    color: white;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    margin-left: -1.1rem;
+    margin-right: -1.1rem;
+    
+    margin-top: -12rem;
+}
+
+    .texter h5 {
+        font-family: Gilroy-Bold;
+        font-size: 20px;
+    }
+
+    .texter p {
+        font-family: Karla-Regular;
+        font-size: 14px;
+    }
+
+.rutaa {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#midel-c {
+    display: flex;
+    background-color: #F7FCFF;
+    justify-content: center;
+}
+
+.im-d {
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+.tex-d {
+    margin-top: 5rem;
+    margin-right: 2rem;
+}
+.form-control {
+    background-color: white;
+}
+
+.get-t h1 {
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    color: #002249;
+    margin-bottom: 4rem;
+}
+
+.get-t p {
+    font-family: Karla-Bold;
+    font-size: 16px;
+    color: #006DE8;
+}
+
+.btn-submit {
+    background-color: #0066FF;
+    color: white;
+    padding: 02%;
+}
+#errors-page {
+    justify-items: center;
+}
+
+.error-page {
+    justify-items: center;
+    margin-left: 35rem;
+    margin-top: 10rem;
+}
+
+.get-tt {
+    margin-left: 11rem;
+}
+
+    .get-tt h1 {
+        font-family: Gilroy-Bold;
+        font-size: 80px;
+        justify-content: center;
+    }
+
+    .get-tt p {
+        margin-left: 12rem;
+    }
